@@ -1,0 +1,96 @@
+.team {
+    background-color: var(--portfolio-button-color);
+}
+
+.team__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+}
+
+.team__list {
+    @media screen and (min-width: 768px) {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+}
+}
+
+.team__item:not(:last-child) {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
+}
+
+.team__item {
+    width: 100%;
+    height: 428px;
+    background-color: var(--primaty-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+ @media screen and (min-width: 768px) {
+        flex-basis: calc( (100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+   flex-basis: calc( (100% - 90px) / 4);
+   }
+}
+
+.team__box {
+    margin-top: 30px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.team__names {
+    margin-bottom: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+}
+
+.team__text {
+    margin-bottom: 16px;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+color: var(--secondary-text-color);
+}
+
+.team__soclist {
+    display: flex;
+    justify-content: center;
+    
+}
+.team__link:not(:last-child) {
+margin-right: 10px;
+}
+
+.team__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: var(--primaty-white-color);
+    color: var(--team-soc-link-color);
+
+    transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function);
+&:hover,
+&:focus {
+    background-color: var(--accent-color);
+  color: var(--primaty-white-color);
+}
+} 
+.team__icon {
+    fill: currentColor;
+}

@@ -1,0 +1,23 @@
+:root {
+    --primary-text-color: #212121;
+--secondary-text-color: #757575;
+--accent-color: #2196F3;
+--accent-color-button: #188CE8;
+--primaty-white-color: #FFFFFF;
+--primary-background-color: #fff;
+--background-color-title: #2F303A;
+--portfolio-button-color: #F5F4FA;
+--header-border-color: #ECECEC;
+--portfolio-border-color: #EEEEEE;
+--team-soc-link-color: #AFB1B8;
+--transition-duration: 250ms;
+--transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: #fff;
+}

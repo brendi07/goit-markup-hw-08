@@ -1,0 +1,224 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-color-title);
+    height: 603px;
+     @media screen and (min-width: 768px) {
+        height: 463px;
+     }
+    @media screen and (min-width: 1200px) {
+        height: 252px;
+    }
+}
+.footer .conteiner {
+    display: flex;
+justify-content: center;
+align-items: center;
+@media screen and (max-width: 767px) {
+   flex-direction: column; 
+}
+  @media screen and (min-width: 768px) {
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: baseline;
+   row-gap: 60px;
+}
+@media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+}
+
+.adress-conteiner {
+      @media screen and (min-width: 768px) {
+    align-items: center;
+}
+}
+
+.adress {
+    height: 80px;
+    margin-top: 20px;
+    font-style: normal;
+ text-align: center;
+    @media screen and (min-width: 768px) {
+        width: 232px;
+        margin-right: 165px;
+    }
+   @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-right: 70px;
+    text-align: left;
+   }
+}
+
+.footer .logo {
+    margin-bottom: 20px;
+}
+
+.footer .logo-right {
+    color: var(--primaty-white-color);
+}
+
+.adress__text {
+    margin-bottom: 9px;
+line-height: 1.71;
+color: var(--primaty-white-color);
+@media screen and (min-width: 768px) {
+   margin-bottom: 8px;
+   }
+}
+
+.adress__item:not(:last-child) {
+    margin-bottom: 9px;
+    @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+   }
+}
+
+.adress__link {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+&:focus {
+    color: var(--accent-color);
+}
+}
+
+
+.join {
+    width: 206px;
+    height: 80px;
+    color: var(--accent-color-button);
+   margin-top: 60px;
+   margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+      @media screen and (min-width: 1200px) {
+    justify-content: center;
+    text-align: left;
+    margin-right: 93px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+}
+.join__text,
+.subscribe__text {
+    margin-bottom: 20px;
+    font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primaty-white-color);
+}
+
+.join__list {
+    display: flex;
+    justify-content: center;
+    
+}
+.join__list>li:not(:last-child) {
+   margin-right: 10px;
+}
+.join__link:not(:last-child) {
+margin-right: 10px;
+}
+
+.join__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primaty-white-color);
+    fill: var(--primaty-white-color);
+
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+&:focus {
+    background-color: var(--accent-color);
+    fill: var(--primaty-white-color);
+}
+} 
+
+
+.subscribe {
+    width: 570px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     @media screen and (min-width: 1200px) {
+    justify-content: center;
+    align-items: baseline;
+   }
+}
+
+
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     @media screen and (min-width: 1200px) {
+    justify-content: center;
+    text-align: left;
+    flex-direction: row;
+   }
+}
+
+.subscribe__input {
+  width: 358px;
+  height: 100%;
+  
+  color: #188CE8;
+background-color: transparent;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding: 15px 16px;  
+margin-right: 12px;
+outline: none;
+@media screen and (min-width: 768px) {
+    width: 450px;
+    margin-bottom: 20px;
+   }
+   @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 100%;
+    margin-bottom: 0px;
+   }
+}
+
+.subscribe__button {
+    width: 200px;
+height: 50px;
+padding: 10px 28px;
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: var(--primaty-white-color);
+background-color: var(--accent-color);
+border-color: transparent;
+border-radius: 4px;
+}
+
+.subscribe__icon {
+    fill: currentColor;
+    margin-left: 10px;
+}
