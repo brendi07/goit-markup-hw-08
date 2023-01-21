@@ -1,8 +1,32 @@
 .hero {
+    width: 100%;
     display: flex;
     align-items: center;
-    width: 480px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+     background-color: var(--background-color-title);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/hero-bg-mob.jpg);
+    @include retina {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/hero-bg-mob-2x.jpg);
+    };  
+    @media  screen and (min-width: 480px) {
+       width: 480px;
     height: 400px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--background-color-title);
     background-image: linear-gradient(
         to right,
@@ -17,14 +41,8 @@
         rgba(47, 48, 58, 0.4)
         ),
     url(../images/hero-bg-mob-2x.jpg);
-    };
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
+    };  
+    }
     @media  screen and (min-width: 768px) {
 width: 768px;
 height: auto;
@@ -44,7 +62,7 @@ background-image: linear-gradient(
     }
     }
     @media  screen and (min-width: 1200px) {
-        width: 1600px;
+        width: 100%;
         height: 100%;
         background-image: linear-gradient(
         to right,
@@ -52,20 +70,33 @@ background-image: linear-gradient(
         rgba(47, 48, 58, 0.4)
         ),
     url(../images/hero-background.jpg);
+    @include retina {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/hero-background-2x.jpg);
     }
-}
+    }
+    }
+
 
 .hero__title {
-    width: 360px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     color: var(--primaty-white-color);
     font-weight: 900;
-font-size: 26px;
+font-size: 20px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.06em;
+@media  screen and (min-width: 480px) {
+    width: 360px;
+    font-size: 26px;
+}
 @media  screen and (min-width: 1200px) {
      width: 696px;
 font-size: 44px;

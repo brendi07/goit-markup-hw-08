@@ -31,19 +31,30 @@ align-items: center;
 }
 
 .adress-conteiner {
-      @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 24px;
+      @media screen and (min-width: 768px) {
+   width: 232px;
+}
+@media screen and (min-width: 1200px) {
+   width: 100%;
+   align-items: flex-start;
 }
 }
 
 .adress {
-    height: 80px;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 72px;
     font-style: normal;
  text-align: center;
+
     @media screen and (min-width: 768px) {
-        width: 232px;
-        margin-right: 165px;
+      
     }
    @media screen and (min-width: 1200px) {
     justify-content: center;
@@ -52,27 +63,30 @@ align-items: center;
    }
 }
 
-.footer .logo {
-    margin-bottom: 20px;
-}
 
 .footer .logo-right {
     color: var(--primaty-white-color);
 }
 
 .adress__text {
-    margin-bottom: 9px;
+   
 line-height: 1.71;
 color: var(--primaty-white-color);
 @media screen and (min-width: 768px) {
-   margin-bottom: 8px;
+  
    }
 }
 
+.adress__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .adress__item:not(:last-child) {
-    margin-bottom: 9px;
+   
     @media screen and (min-width: 768px) {
-    margin-bottom: 8px;
+  
    }
 }
 
@@ -152,12 +166,14 @@ margin-right: 10px;
 
 
 .subscribe {
-    width: 570px;
+    width: 100%;
     height: 86px;
     display: flex;
     align-items: center;
     flex-direction: column;
      @media screen and (min-width: 1200px) {
+     width: 570px;
+    height: 86px;
     justify-content: center;
     align-items: baseline;
    }
@@ -166,18 +182,21 @@ margin-right: 10px;
 
 
 .subscribe__form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
      @media screen and (min-width: 1200px) {
     justify-content: center;
     text-align: left;
     flex-direction: row;
+    gap: 12px;
    }
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 100%;
   height: 100%;
   
   color: #188CE8;
@@ -186,11 +205,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 padding: 15px 16px;  
-margin-right: 12px;
 outline: none;
 @media screen and (min-width: 768px) {
     width: 450px;
-    margin-bottom: 20px;
    }
    @media screen and (min-width: 1200px) {
     width: 358px;
