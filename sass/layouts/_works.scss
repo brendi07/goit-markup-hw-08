@@ -1,7 +1,8 @@
 .works {
     padding-top: 0;
-    @media screen {max-width: 480px;
-        display: none;
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: block;
     }
 }
 .works__title {

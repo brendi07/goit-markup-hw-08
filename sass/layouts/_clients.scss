@@ -13,7 +13,7 @@ flex-wrap: wrap;
     gap: 30px;
 }
 .clients__list li {
-        flex-basis: calc( (100% - 60px) / 2);
+        flex-basis: calc( (100% - 30px) / 2);
         @media screen and (min-width: 768px) {
     flex-basis: calc( (100% - 60px) / 3);
 }

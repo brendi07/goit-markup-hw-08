@@ -1,10 +1,13 @@
 .header {
-    border-bottom: 1px solid var(--header-border-color);
     display: flex;
     align-items: center;
     @media screen and (max-width: 768px) {
         height: 60px;
     }
+}
+
+.portfolio-header {
+        border-bottom: 1px solid var(--header-border-color);
 }
 
 .header .conteiner {
@@ -13,7 +16,7 @@
     height: 80px;
 }
 
-.nav .logo--right {
+.header-logo {
     margin-right: 88px;
     @media screen and (min-width: 1200px) {
          margin-right: 93px;
@@ -75,14 +78,22 @@ transition: color var(--transition-duration) var(--transition-timing-function);
 .connection__icon {
     margin-right: 10px;
    fill: currentColor;
+   @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+   }
+}
+.con-icon-smart {
+    @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+   }
 }
 
 .connection__link {
      display: flex;
     align-items: center;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font (12, 500, 0.02em, 1.14);
     color: var(--secondary-text-color);
     color: var(--secondary-text-color);
 
@@ -98,12 +109,11 @@ transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 
-.connection {
-    margin-left: auto;
-}
+
 
 .connection__list {
     gap: 40px;
+    margin-left: auto;
     @media screen and (max-width: 1200px) {
 flex-direction: column;
 align-items: baseline;
@@ -185,6 +195,10 @@ color: #212121;
 }
 }
 
+.current-menu {
+    color: var(--accent-color);
+}
+
 .mob-menu-nav-item:not(:last-child) {
 margin-bottom: 32px;
 }
@@ -195,7 +209,10 @@ margin-bottom: 32px;
 
 .mob-menu-connection-link {
     color: var(--accent-color);
-    @include font(34, 500, 0.02em, 1.18);
+    @include font(28, 500, 0.02em, 1.18);
+@media screen and (min-width: 400px) {
+font-size: 34px;
+}
   
 }
 
@@ -207,6 +224,10 @@ color: #757575;
 .mob-menu-soc-link-list {
     display: flex;
     margin-top: 64px;
+    @media screen and (max-width: 458px) {
+      flex-wrap: wrap;
+      gap: 15px;  
+    }
 }
 
 .mob-menu-soc-link {
