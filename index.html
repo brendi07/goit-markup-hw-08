@@ -152,21 +152,10 @@
         <ul class="list team__list">
             <li class="team__item">
                 <picture>
-                    <source
-                    media="(min-width: 1200px)"
-                    srcset="./images/man1.jpg,
-                 ./images/man1-2x.jpg" >
-                 <source
-                 media="(min-width: 768px)"
-                 srcset="./images/man1-tab-1x.jpg,
-                 ./images/man1-tab-2x.jpg">
-                 <source
-                 media="(min-width: 480px)"
-                 srcset="./images/man1-mob-1x.jpg,
-                 ./images/man1-mob-2x.jpg">
-                <img srcset="./images/man1.jpg,
-                 ./images/man1-2x.jpg" src="images/man1.jpg"
-                  alt="Фото Ігора Дем'яненка">
+                 <source srcset="./images/man1.jpg 1x, ./images/man1-2x.jpg 2x" media="(min-width: 1200px)" />
+                 <source srcset="./images/man1-tab-1x.jpg 1x, ./images/man1-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                 <source srcset="./images/man1-mob-1x.jpg 1x, ./images/man1-mob-2x.jpg 2x" media="(min-width: 480px)" />
+                <img src="images/man1.jpg" alt="Фото Ігора Дем'яненка" />
                 </picture>
                 <div class="team__box">
                     <h3 class="team__names">Ігор Дем'яненко</h3>
@@ -201,20 +190,10 @@
             </li>
             <li class="team__item">
                 <picture>
-                    <source
-                    media="(min-width: 1200px)"
-                    srcset="./images/man2.jpg,
-                 ./images/man2-2x.jpg" >
-                 <source
-                 media="(min-width: 768px)"
-                 srcset="./images/man2-tab-1x.jpg,
-                 ./images/man2-tab-2x.jpg">
-                 <source
-                 media="(min-width: 480px)"
-                 srcset="./images/man2-mob-1x.jpg,
-                 ./images/man2-mob-2x.jpg">
-                <img srcset="./images/man2.jpg,
-                 ./images/man2-2x.jpg" alt="Фото Ольги Рєпіної" src="images/man2.jpg">
+                    <source srcset="./images/man2.jpg 1x, ./images/man2-2x.jpg 2x" media="(min-width: 1200px)" />
+                 <source srcset="./images/man2-tab-1x.jpg 1x, ./images/man2-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                 <source srcset="./images/man2-mob-1x.jpg 1x, ./images/man2-mob-2x.jpg 2x" media="(min-width: 480px)" />
+                <img src="images/man2.jpg" alt="Фото Ольга Рєпіна" />
                 </picture>
                 <div class="team__box">
                     <h3 class="team__names">Ольга Рєпіна</h3>
@@ -249,20 +228,16 @@
             </li>
             <li class="team__item">
                 <picture>
-                    <source
-                    media="(min-width: 1200px)"
-                    srcset="./images/man3.jpg,
-                 ./images/man3-2x.jpg">
+                    <source media="(min-width: 1200px)" srcset="./images/man3.jpg 1x, ./images/man3-2x.jpg 2x">
                  <source
                  media="(min-width: 768px)"
-                 srcset="./images/man3-tab-1x.jpg,
-                 ./images/man3-tab-2x.jpg">
+                 srcset="./images/man3-tab-1x.jpg 1x,
+                 ./images/man3-tab-2x.jpg 2x">
                  <source
                  media="(min-width: 480px)"
-                 srcset="./images/man3-mob-1x.jpg,
-                 ./images/man3-mob-2x.jpg">
-                <img srcset="./images/man3.jpg,
-                 ./images/man3-2x.jpg" alt="Фото Миколи Тарасова" src="images/man3.jpg">
+                 srcset="./images/man3-mob-1x.jpg 1x,
+                 ./images/man3-mob-2x.jpg 2x">
+                <img alt="Фото Миколи Тарасова" src="images/man3.jpg">
                 </picture>
                 <div class="team__box">
                     <h3 class="team__names">Микола Тарасов</h3>
@@ -299,18 +274,17 @@
                 <picture>
                     <source
                     media="(min-width: 1200px)"
-                    srcset="./images/man4.jpg,
-                 ./images/man4-2x.jpg">
+                    srcset="./images/man4.jpg 1x,
+                 ./images/man4-2x.jpg 2x">
                  <source
                  media="(min-width: 768px)"
-                 srcset="./images/man4-tab-1x.jpg,
-                 ./images/man4-tab-2x.jpg">
+                 srcset="./images/man4-tab-1x.jpg 1x,
+                 ./images/man4-tab-2x.jpg 2x">
                  <source
                  media="(min-width: 480px)"
-                 srcset="./images/man4-mob-1x.jpg,
-                 ./images/man4-mob-2x.jpg">
-                <img srcset="./images/man4.jpg,
-                 ./images/man4-2x.jpg" alt="Фото Михайла Єрмакова" src="images/man4.jpg">
+                 srcset="./images/man4-mob-1x.jpg 1x,
+                 ./images/man4-mob-2x.jpg 2x">
+                <img alt="Фото Михайла Єрмакова" src="images/man4.jpg">
                 </picture>
                 <div class="team__box">
                     <h3 class="team__names">Михайло Єрмаков</h3>
@@ -350,25 +324,25 @@
     <div class="conteiner">
 <h2 class="clients__title">Постійні клієнти</h2>
 <ul class="clients__list list">
-    <li><a class="clients__item">
+    <li><a class="clients__item" href="">
         <svg class="clients__icon" width="106" height="60">
             <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
     </a>
     </li>
-    <li><a class="clients__item">
+    <li><a class="clients__item" href="">
         <svg class="clients__icon" width="106" height="60">
             <use href="./images/sprite.svg#icon-logo1"></use>
         </svg>
     </a>
     </li>
-    <li><a class="clients__item">
+    <li><a class="clients__item" href="">
         <svg class="clients__icon" width="106" height="60">
             <use href="./images/sprite.svg#icon-logo2"></use>
         </svg>
     </a>
     </li>
-    <li><a class="clients__item">
+    <li><a class="clients__item" href="">
         <svg class="clients__icon" width="106" height="60">
             <use href="./images/sprite.svg#icon-logo3"></use>
         </svg>

@@ -393,6 +393,7 @@ body {
 
 .hero {
   width: 100%;
+  max-width: 1600px;
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
@@ -409,7 +410,7 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-2x.jpg);
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
     width: 480px;
     height: 400px;
@@ -419,28 +420,27 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero {
     width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 100%;
+    max-width: 1600px;
     height: 600px;
-    background-size: cover;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
   }
 }
@@ -695,6 +695,10 @@ body {
 .team__soclist {
   display: flex;
   justify-content: center;
+}
+
+.team__soclist > li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team__link:not(:last-child) {
@@ -973,7 +977,7 @@ body {
 .subscribe__input {
   width: 100%;
   height: 100%;
-  color: #188CE8;
+  color: white;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1033,7 +1037,6 @@ body {
 
 .modal {
   position: absolute;
-  height: 80%;
   top: 50%;
   left: 50%;
   z-index: 1;
@@ -1191,7 +1194,23 @@ body {
   justify-content: center;
   cursor: pointer;
   font-size: 12px;
-  line-height: 1.71;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 440px) {
+  .modal__input-group .checkbox__rules {
+    font-size: 7px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__input-group .checkbox__rules {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.modal__input-group:nth-child(4) {
+  margin-bottom: 20px;
 }
 
 .checkbox__rules::before {
@@ -1205,15 +1224,12 @@ body {
 
 .modal__conditions {
   color: var(--accent-color);
+  margin-left: 5px;
 }
 
 .modal__send {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  bottom: 18px;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  margin: 0 auto;
+  display: block;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -1223,6 +1239,16 @@ body {
 .modal__send:hover, .modal__send:focus {
   background-color: var(--accent-color-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 480px) {
+  .modal__send {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 18px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 }
 
 .portfolio-btn__list {
