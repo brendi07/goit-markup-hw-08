@@ -8,7 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-size: cover;
+    justify-content: center;
      background-color: #C4C4C4;
     background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
      url(../images/hero-bg-mob.jpg);
@@ -18,10 +18,9 @@
     };  
     @media  screen and (min-width: 480px) and (max-width: 767px) {
        width: 480px;
-    height: 400px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-size: contain;
+   
+    padding: 118px 60px;
+   
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg-mob.jpg);
@@ -32,7 +31,8 @@
     }
     @media  screen and (min-width: 768px) and (max-width: 1200px) {
 width: 768px;
-height: 400px;
+padding: 118px 200px;
+
 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 url(../images/hero-bg-tab.jpg);
      @include retina {
@@ -44,7 +44,7 @@ url(../images/hero-bg-tab.jpg);
     }
     @media  screen and (min-width: 1200px) {
         max-width: 1600px;
-        height: 600px;
+      padding: 200px 452px;
         background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -62,6 +62,12 @@ url(../images/hero-bg-tab.jpg);
     }
     }
 
+    .section .hero {
+       @media  screen and (min-width: 480px) {
+         padding: 58px 0px;
+       }
+       
+    }
 
 // .hero {
 //     max-width: 1600px;
