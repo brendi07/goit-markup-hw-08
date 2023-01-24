@@ -1,9 +1,7 @@
 .header {
     display: flex;
     align-items: center;
-    @media screen and (max-width: 768px) {
-       
-    }
+    border-bottom: 1px solid var(--header-border-color);
 }
 
 .portfolio-header {
@@ -70,7 +68,7 @@ transition: color var(--transition-duration) var(--transition-timing-function);
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     display: block;
     background-color: var(--accent-color);
     width: 100%;
